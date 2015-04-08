@@ -13,10 +13,11 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #FFF;
-$text-color-light: #FFF;
+$text-color-light: #E8E8E8;
 $text-color-dark:  #828282;
 $background-color: #262b2e;
-$brand-color:      #FFF;
+$brand-color:      #3ddcc5;
+$success-color:	   #41E857;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -29,6 +30,17 @@ $on-palm:          600px;
 $on-laptop:        800px;
 
 
+
+/* Gradient transparent - color - transparent */
+
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0));
+}
 
 // Using media queries with like this:
 // @include media-query($on-palm) {

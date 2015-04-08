@@ -17,31 +17,29 @@
         .footer_contact{
 
             padding: 0 30px 30px 30px;
-            border-right: 3px solid #fff;
+            border: 1.5px solid #fff;
 
             .contact_headline {
                 padding: 10px 0;
                 color: $text-color-light;
                 text-transform: uppercase;
-                text-align: left;
+                text-align: center;
                 font-weight: 300;
                 line-height: 1.0;
             }
 
             form {
-                .form-group {
+                
+                .container-fluid {
 
-                    textarea {
-                        border: 2px solid #fff;
+                    .row {
+
                     }
-
-                    input {
-                        border: 2px solid #fff;
-                    }
-
                 }
 
+
                 .send {
+                    margin: 20px auto 0px;
                     padding: 4px 10px;
                     font-size: 20px;
                     border-radius: 0px;
@@ -58,7 +56,64 @@
             }
         }
 
+        .footer_container_right{
+            
+            
 
+                .row{
+                    position: relative;
+                    .footer_adress p  {
+                        color: $grey-color-light;
+                        text-align: left;
+
+                    }
+
+                    .footer_menu ul {
+
+                        margin: 0;
+
+                        li {
+                        
+                            text-align: left;
+                            a {
+                            color: $grey-color-light;
+                            }
+                        }
+                    }
+
+                    .footer_social ul{
+                        margin: 0;
+                    
+                        li {
+                            text-align: left;
+                            margin: 30px auto;
+
+                            a{
+                                color: $grey-color-light;
+                                font-size: 20px;
+                                text-transform: uppercase;
+                                padding: 9px;
+                                border: 2px solid #fff;
+                                line-height: 1.0;
+
+                                &:hover {
+                                    color: $text-color-dark;
+                                    background-color: #fff;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+
+                    .footer_license {
+                        p {
+                            color: $grey-color-light;
+                            text-align: justify;
+                        }
+                    }
+                }
+            
+        }
 
 
     }

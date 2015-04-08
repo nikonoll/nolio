@@ -28,7 +28,11 @@
 			margin-top: 30px;
 
 			.row{
+
+				margin-bottom: 30px; 
 				.col-xs-12{
+
+					text-align: center;
 
 					padding-top: 30px;
 
@@ -50,6 +54,12 @@
 					}
 					.description {
 
+					}
+
+					/*second row stlyes*/
+					.teaser_img {
+						max-height: 500px;
+						margin: 30px auto;
 					}
 				}
 			}
