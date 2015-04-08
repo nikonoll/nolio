@@ -1,0 +1,91 @@
+/* Custom Styles */
+
+.site-footer {
+    padding: 0;
+    margin-top: -20px;
+
+}
+.footer_wrapper {
+    background-color: $grey-color-dark;
+    background-image: url(/images/dark_embroidery.png);
+    background-repeat: repeat;
+
+    .row {
+        margin: 20px auto;
+        text-align: center;
+
+        .footer_contact{
+
+            padding: 0 30px 30px 30px;
+            border-right: 3px solid #fff;
+
+            .contact_headline {
+                padding: 10px 0;
+                color: $text-color-light;
+                text-transform: uppercase;
+                text-align: left;
+                font-weight: 300;
+                line-height: 1.0;
+            }
+
+            form {
+                .form-group {
+
+                    textarea {
+                        border: 2px solid #fff;
+                    }
+
+                    input {
+                        border: 2px solid #fff;
+                    }
+
+                }
+
+                .send {
+                    padding: 4px 10px;
+                    font-size: 20px;
+                    border-radius: 0px;
+                    background-color: transparent;
+                    border: 4px solid #fff;
+                    text-transform: uppercase;
+                    color: $text-color-light;
+
+                    &:hover{
+                        background-color: #fff;
+                        color: $text-color-dark;
+                    }
+                }
+            }
+        }
+
+
+
+
+    }
+
+}
+/**
+ * Default Styles: Site footer
+ */
+
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: $spacing-unit / 2;
+}
+
+.contact-list,
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer-col-wrapper {
+    font-size: 15px;
+    color: $grey-color;
+    margin-left: -$spacing-unit / 2;
+    @extend %clearfix;
+}
+
+
+

@@ -1,0 +1,13 @@
+# Site settings
+title: NOLIO 
+subtitle: solutions
+email: hi@nolio.de
+description: > # this means to ignore newlines until "baseurl:"
+  Webdesign München | Internetagentur, Webdesign Agentur | Contao, Wordpress als CMS
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://nolio.de" # the base hostname & protocol for your site
+twitter_username: nolio
+github_username:  
+
+# Build settings
+markdown: kramdown

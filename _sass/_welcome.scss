@@ -1,0 +1,191 @@
+/**
+ * Site header
+ */
+.site-header {
+    border-top: 5px solid $grey-color-dark;
+    min-height: 56px;
+
+    // Positioning context for the mobile navigation icon
+    position: relative;
+}
+
+.site-title {
+    color: $text-color-light;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 56px;
+    letter-spacing: 10px;
+    float: left;
+
+
+    &,
+    &:visited {
+        color: $text-color-light;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+/* not needed in markup here but usefull*/
+.vertical_line {
+    border-left: 3px solid rgba(255, 255, 255, 0.2);
+    height: 34px;
+    left: 385px;
+    position: absolute;
+    top: 66px;
+}
+
+.site-sub-title {
+    color: $text-color-light;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    float: left;
+    text-transform: uppercase;
+    position: absolute;
+    left: 45px;
+    top: 60px;
+
+    border-top: 3px solid rgba(255,255,255,0.3);
+    padding-top: 10px;
+
+
+    &,
+    &:visited {
+        color: $text-color-light;
+    }
+    
+}
+
+
+
+
+/* NAVIGATION */
+.site-nav {
+    float: right;
+    line-height: 56px;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: $text-color-light;
+        line-height: $base-line-height;
+
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+
+    @include media-query($on-palm) {
+        position: absolute;
+        top: 9px;
+        right: 30px;
+        background-color: $background-color;
+        border: 1px solid $grey-color-light;
+        border-radius: 5px;
+        text-align: right;
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 26px;
+            line-height: 0;
+            padding-top: 10px;
+            text-align: center;
+
+            > svg {
+                width: 18px;
+                height: 15px;
+
+                path {
+                    fill: $grey-color-light;
+                }
+            }
+        }
+
+        .trigger {
+            clear: both;
+            display: none;
+        }
+
+        &:hover .trigger {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+        }
+    }
+}
+
+/* BACKGROUND */
+
+.welcome_wrapper {
+    background-color: #00FFCC; /*fallback*/
+    background-image: url(/images/zokni.jpg);
+    height: 728px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -60px;
+
+    @include media-query($on-palm) {
+        height: 300px;
+    }
+}
+
+.welcome_hero {
+    float: left;
+    clear: both;
+    margin: 370px 0 0 30px;
+
+    .welcome_slogan {
+    
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 1.0;
+        color: $text-color-light;
+        text-transform: uppercase;
+
+            span {
+                color:#3ddcc5;
+            }
+    }
+
+    .button_white {
+        background: transparent;
+        border-radius: 0px;
+        border: 3px solid white;
+        color: $text-color-light;
+        font-size: 30px;
+        font-family: $base-font-family;
+        text-transform: uppercase;
+        margin-top: 20px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #FFF;
+            color: $grey-color-dark;
+        }
+    }
+
+    @include media-query($on-palm) {
+        display: none;
+    }
+}
+
+
+
+
+
+
+

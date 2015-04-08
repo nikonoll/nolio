@@ -1,0 +1,58 @@
+.services_wrapper {
+	background: url(/images/concrete_seamless.png);
+	background-color: #FFF;
+	background-repeat: repeat;
+	margin-top: -20px;
+	padding-bottom: 50px;
+
+	.description_wrap {
+		max-width: 1100px;
+		margin: 0 auto;
+		padding-top: 30px;
+
+		.site_headline {
+			font-size: 30px;
+			color: $text-color-dark;
+			text-transform: uppercase;
+			text-align: center;
+			line-height: 1.0;
+			font-weight: 300;
+
+			span {
+				font-weight: 400;
+			}
+		}
+
+		.container-fluid{
+
+			margin-top: 30px;
+
+			.row{
+				.col-xs-12{
+
+					padding-top: 30px;
+
+					.thumbnail_img {
+						margin: 0 auto;
+						height: 100px;
+						width: 100px;
+
+						.icon {
+							height: 100px;
+							width: 100px;
+
+						}
+					}
+					
+
+					.subheadline {
+						text-align: center;
+					}
+					.description {
+
+					}
+				}
+			}
+		}
+	}	
+}
