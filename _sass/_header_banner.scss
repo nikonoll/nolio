@@ -1,0 +1,41 @@
+.banner_wrapper {
+	height: 358px;
+	background-color: $grey-color-dark;
+	background-image: url(/images/101H.jpg);
+	background-size: cover;
+	background-position: center;
+	margin-top: -156px;
+
+	@include media-query($on-palm) {
+		.mobile_layover{
+			background: rgba(0,0,0,.4);
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+
+
+	.banner_title {
+		color: $text-color;
+		background: rgba(0,0,0,.4);
+		text-align: center;
+		line-height: 1.0;
+		text-transform: uppercase;
+		letter-spacing: .3em;
+		font-weight: 300;
+		font-size: 30px;
+		margin: 100px auto 0;
+		padding: 30px 0 70px 0;
+
+		@include media-query($on-palm) {
+			clear: both;
+			width: 100%;
+			background: transparent;
+			position: absolute;
+			bottom: 0;
+
+		}
+
+	}
+}

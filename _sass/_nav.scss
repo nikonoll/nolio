@@ -1,0 +1,175 @@
+.click-nav {
+	/*Desktop view */
+	float: right;
+	line-height: 56px;
+	
+	
+	ul {
+		li {
+			list-style: none;
+			cursor: pointer;
+
+			.clicker {
+				display: none;
+
+				@include media-query($on-palm) {
+					position: absolute;
+					top: 10px;
+					right: 20px;
+					display: block;
+		            width: 36px;
+		            height: 36px;
+		            line-height: 0;
+		            padding: 10px;
+		            text-align: center;
+		            border: 2px solid $text-color-light;
+
+		            > svg {
+		                width: 15px;
+		                height: 15px;
+
+		                path {
+		                    fill: $grey-color-light;
+		                }
+		            }
+				}
+			}
+
+			.inactive {
+				background-color: transparent;
+			}
+
+			.menu_list {
+				position: relative;
+
+				.menu_item {
+					list-style: none;
+					display: inline-block;
+
+        			// Gaps between nav items, but not on the first one
+        			&:not(:first-child) {
+            			margin-left: 20px;
+        			}
+
+        			a {
+        				color: $text-color-light;
+        				line-height: $base-line-height;
+        			}
+
+				}
+
+				@include media-query ($on-palm) {
+					margin: 0px;
+					display: list-item;
+					list-style: none;
+
+					.menu_item {
+						margin: 0px;
+						display: list-item;
+						clear: both;
+
+	        			&:not(:first-child) {
+	        				margin: 0;
+	        			}
+
+						a {
+							text-align: center;
+							text-transform: uppercase;
+						}
+					}
+				}
+			}
+		}
+	}
+	@include media-query ($on-palm){
+		width: 100%;
+		background-color: $grey-color-dark;
+		color: $text-color;
+		clear: both;
+		margin-top: -10px;
+	}
+	
+}
+
+/*
+.click-nav ul li ul {position:absolute;left:0;right:0;}
+.click-nav ul .clicker {position:relative;background:#2284B5;color:#FFF;}
+.click-nav ul .clicker:hover,.click-nav ul .active {background:#196F9A;}
+.click-nav img {position:absolute;top:9px;left:12px;}
+.click-nav ul li a {transition:background-color 0.2s ease-in-out;-webkit-transition:background-color 0.2s ease-in-out;
+-moz-transition:background-color 0.2s ease-in-out;display:block;padding:8px 10px 8px 40px;background:#FFF;color:#333;text-decoration:none;}
+.click-nav ul li a:hover {background:#F2F2F2;}
+*/
+/* Fallbacks */
+/*
+.click-nav .no-js ul {display:none;}
+.click-nav .no-js:hover ul {display:block;}
+*/
+
+
+/* NAVIGATION */
+/*
+.site-nav {
+    float: right;
+    line-height: 56px;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: $text-color-light;
+        line-height: $base-line-height;
+
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+
+    @include media-query($on-palm) {
+        position: absolute;
+        top: 9px;
+        right: 10px;
+        background-color: $grey-color-dark;
+        border: 1px solid $grey-color-light;
+        border-radius: 0px;
+        text-align: right;
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 36px;
+            line-height: 0;
+            padding: 10px;
+            text-align: center;
+
+            > svg {
+                width: 18px;
+                height: 15px;
+
+                path {
+                    fill: $grey-color-light;
+                }
+            }
+        }
+
+        .trigger .no-js {
+            clear: both;
+            display: none;
+        }
+
+        
+        &:hover .trigger .no-js{
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+        }
+    }
+}
+*/
