@@ -41,10 +41,13 @@
 
 			.menu_list {
 				position: relative;
-
+				margin-right: 20px;
 				.menu_item {
 					list-style: none;
 					display: inline-block;
+					font-size: 15px;
+					text-transform: uppercase;
+
 
         			// Gaps between nav items, but not on the first one
         			&:not(:first-child) {

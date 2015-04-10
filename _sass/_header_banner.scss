@@ -4,9 +4,9 @@
 	background-image: url(/images/101H.jpg);
 	background-size: cover;
 	background-position: center;
-	margin-top: -156px;
+	margin-top: -167px;
 
-	@include media-query($on-palm) {
+	@include media-query(800px) {
 		.mobile_layover{
 			background: rgba(0,0,0,.4);
 			height: 100%;
@@ -28,6 +28,9 @@
 		margin: 100px auto 0;
 		padding: 30px 0 70px 0;
 
+		@include media-query(800px){
+			display: none;
+		}
 		@include media-query($on-palm) {
 			clear: both;
 			width: 100%;
