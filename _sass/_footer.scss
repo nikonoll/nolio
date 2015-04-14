@@ -12,29 +12,42 @@
     background-repeat: repeat;
 
     .row {
-        margin: 20px auto;
+        
         text-align: center;
 
         .footer_contact{
 
             padding: 0 30px 30px 30px;
-            border: 1.5px solid #fff;
+            
 
             .contact_headline {
                 padding: 10px 0;
                 color: $text-color-light;
                 text-transform: uppercase;
                 text-align: center;
-                font-weight: 300;
+                font-weight: 400;
                 line-height: 1.0;
+                font-size: 20px;
             }
 
             form {
                 
                 .container-fluid {
+                    padding: 0;
 
                     .row {
+                        margin: 20px auto;
+                        max-width: 600px;
+                        .form_elements {
+                            padding: 0 5px;
 
+                            input {
+                                border-radius: 0;
+                            }
+                            textarea {
+                                border-radius: 0;
+                            }
+                        }
                     }
                 }
 
@@ -69,9 +82,23 @@
 
                 .row{
                     position: relative;
+                    margin: 20px auto;
+                    .col-xs-6 {
+
+                        padding: 10px;
+
+                        text-align: center;
+
+                        @include media-query ($on-mobile) {
+                            width: 100%;
+                            clear: both;
+                        }
+                    }
                     .footer_adress p  {
                         color: $grey-color-light;
-                        text-align: left;
+                        
+
+
 
                     }
 
@@ -81,9 +108,16 @@
 
                         li {
                         
-                            text-align: left;
+                            
                             a {
                             color: $grey-color-light;
+                            text-transform: uppercase;
+                            line-height: 2.0;
+
+                            &:hover {
+                                color: $brand-color;
+                                text-decoration: none;
+                            }
                             }
                         }
                     }
@@ -92,12 +126,17 @@
                         margin: 0;
                     
                         li {
-                            text-align: left;
+                            list-style-type: none;
+                            display: inline-flex;
                             margin: 30px auto;
+
+                            @include media-query ($on-palm) {
+                                margin: 10px auto;
+                            }
 
                             a{
                                 color: $grey-color-light;
-                                font-size: 20px;
+                                font-size: 10px;
                                 text-transform: uppercase;
                                 padding: 9px;
                                 border: 2px solid #fff;
@@ -115,7 +154,7 @@
                     .footer_license {
                         p {
                             color: $grey-color-light;
-                            text-align: justify;
+                            
                         }
                     }
                 }

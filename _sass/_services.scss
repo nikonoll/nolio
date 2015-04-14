@@ -56,10 +56,20 @@
 
 					}
 
-					/*second row stlyes*/
-					.teaser_img {
-						max-height: 500px;
-						margin: 30px auto;
+
+				}
+			}
+
+			.second_row {
+				text-align: center;
+				
+				div{
+					img {
+						max-height: 300px;
+						
+					}
+					button {
+						margin: 50px auto;
 					}
 				}
 			}
