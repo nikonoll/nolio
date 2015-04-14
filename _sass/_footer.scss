@@ -5,6 +5,7 @@
     margin-top: -20px;
 
 }
+
 .footer_wrapper {
     background-color: $grey-color-dark;
     background-image: url(/images/dark_embroidery.png);
@@ -35,6 +36,12 @@
                     .row {
 
                     }
+                }
+
+                /* changing the look of the bootstrap form*/
+                .form-control {
+                    background: url(/images/concrete_seamless.png);
+                    background-color: $text-color-light;
                 }
 
 
