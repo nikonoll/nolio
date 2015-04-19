@@ -4,7 +4,7 @@
 
     <div class="row">
       <div class="col-xs-12 col-md-6 footer_contact">
-        <h3 class="contact_headline">Lassen Sie uns Ihre Idee besprechen</h3>
+        <h3 class="contact_headline">Kontaktieren Sie uns</h3>
         <form action="http://formspree.io/hi@nolio.de" method="post" class="">
             <div class="container-fluid">
               <div class="row">
@@ -19,7 +19,7 @@
                 <div class="col-xs-12 form_elements">
                   <textarea class="form-control" name="message" rows="3" placeholder="Nachricht"></textarea> 
                   <input type="hidden" name="_subject" value="Ihre Anfrage bei NOLIO | solutions" />
-                  <input type="hidden" name="_next" value="//nolio.de" />
+                  <input type="hidden" name="_next" value="/gesendet/" />
                   <input type="text" name="_gotcha" style="display:none" />
                   <input class="send" type="submit" value="Senden" >
 
@@ -43,19 +43,55 @@
             </div>
             <div class="col-xs-6 col-md-6 footer_menu">
               <ul>
-                <li><a href="#services">&#x2192;  Leistungen</a></li>
-                <li><a href="/team">&#x2192;  Team</a></li>
-                <li><a href="/team">&#x2192;  Kontakt</a></li>
-                <li><a href="/team">&#x2192;  Impressum</a></li>
+                <li><a href="/#services">&#9655;  Leistungen</a></li>
+                <li><a href="/team">&#9655;  Team</a></li>
+                <li><a href="/kontakt">&#9655;  Kontakt</a></li>
+                <li><a href="/referral">&#9655;  Referral</a></li>
+                <li><a href="/impressum">&#9655;  Impressum</a></li>
               </ul>
             </div>
           </div>
           <div class="row">
             <div class="col-xs-6 col-md-6 footer_social">
               <ul>
-                <li><a href="#">facebook</a></li>
-                <li><a href="#">twitter</a></li>
-                <li><a href="#">linkedIn</a></li>
+                <li><a href="#" id="facebook">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" width="35px" heigth="35px">
+                  <g display="none">
+                  </g>
+                  <g id="fb_bg">
+                    <g>
+                      <path d="M99,94c0,2.8-2.2,5-5,5H6c-2.8,0-5-2.2-5-5V6c0-2.8,2.2-5,5-5h88c2.8,0,5,2.2,5,5V94z"/>
+                    </g>
+                  </g>
+                  <g id="The_F">
+                    <rect x="43.5" y="32.5" fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" width="9" height="60"/>
+                    <path fill="none" stroke="#FFFFFF" stroke-width="10" stroke-miterlimit="10" d="M48,32.5c0-9.6,7-17.4,15.8-17.4"/>
+                    <rect x="36.5" y="38.5" fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" width="24" height="8"/>
+                  </g>
+                  </svg>
+                </a></li>
+                <li><a href="#" id="linkedin">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                       viewBox="0 0 100 100" enable-background="new 0 0 20 20" xml:space="preserve" width="35px" height="35px;">
+                      <g display="none">
+                      </g>
+                      <g id="in_bg">
+                        <g>
+                          <path  d="M99,94c0,2.8-2.2,5-5,5H6c-2.8,0-5-2.2-5-5V6c0-2.8,2.2-5,5-5h88c2.8,0,5,2.2,5,5V94z"/>
+                        </g>
+                      </g>
+                      <g id="in">
+                        
+                          <text transform="matrix(1.093 0 0 1 11.999 79.7832)" fill="#FFFFFF" font-family="'AdobeGothicStd-Bold-KSCpc-EUC-H'" font-size="77.5794">in</text>
+                      </g>
+                    </svg>
+                  </a>
+                </li>
               </ul>
             </div>
             <div class="col-xs-6 col-md-6 footer_license">
@@ -74,15 +110,18 @@
     
   </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<!--<script src="{{ "/js/jquery.js" | prepend: site.baseurl }}" type="text/javascript" defer="defer"></script> -->
 
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>  -->
+<script src="{{ "/js/jquery.js" | prepend: site.baseurl | prepend: site.url}}" type="text/javascript" ></script>
 <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}" type="text/javascript" defer="defer"></script>
+<script src="{{ "/js/wow.min.js" | prepend: site.baseurl | prepend: site.url }}" type="text/javascript" defer="defer"></script>
+
+<script src="{{ "/js/smooth-scroll.min.js" | prepend: site.baseurl | prepend: site.url}}" type="text/javascript" defer="defer"></script>
 
 <script>
 $(function () {
-
-
+smoothScroll.init();
+new WOW().init();
 var mql = window.matchMedia('(max-width: 600px)');
 if (mql.matches) {
     $('.click-nav .js ul').hide();
@@ -105,9 +144,10 @@ if (mql.matches) {
       $('.click-nav .js ul').show();
 }
 
-
 });
 
 
+
 </script>
+
 </footer>

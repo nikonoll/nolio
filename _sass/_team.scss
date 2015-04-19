@@ -1,0 +1,92 @@
+.team_wrapper {
+	margin: 30px 10px;
+	
+	
+	.team_row {
+
+		&:last-child{
+			margin-bottom: 100px;
+		}
+
+		padding: 0px;
+		.member_wrapper {
+
+			margin-top: 50px;
+			
+			.member_pic {
+				text-align: center;
+
+				img {
+					margin: 20px 20px 50px;
+					max-height: 300px;
+					border-radius: 50%;
+					border: 5px solid $text-color-light;
+					-webkit-box-shadow: 10px 10px 5px 0px rgba(173,173,173,1);
+					-moz-box-shadow: 10px 10px 5px 0px rgba(173,173,173,1);
+					box-shadow: 10px 10px 5px 0px rgba(173,173,173,1);
+				}
+			}
+
+			.member_data {
+					margin: 30px 20px;
+				h5 {
+
+					text-transform: uppercase;
+					color: $text-color-dark;
+					font-weight: 700px;
+					font-size: 20px;
+				}
+				p {
+					font-size: $base-font-size;
+					text-align: justify;
+					color: $grey-color;
+
+					a:hover {
+						text-decoration: none;
+						color: $brand-color;
+					}
+
+				}
+			}
+
+			.member_skills {
+
+				.skill_title {
+					margin: 5px 0px;
+					text-align: right;
+					span {
+						text-transform: uppercase;
+						font-size: $base-font-size;
+						color: $text-color-dark;
+					}
+					@include media-query(990px){
+						text-align: center;
+					}
+				}
+
+				.progress {
+					margin: 10px;
+					margin-left: 0px;
+					max-width: 70%;
+
+					@include media-query(990px){
+						margin: 10px auto;
+					}
+
+					.progress-bar-success {
+						background-color: rgba(92, 184, 92, .5);
+					}
+					
+
+
+				}
+
+				@include media-query(990px){
+						padding-bottom: 50px;
+						border-bottom: 2px solid $grey-color;
+					}
+			}
+		}
+
+	}
+}

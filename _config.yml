@@ -5,9 +5,21 @@ email: hi@nolio.de
 description: > # this means to ignore newlines until "baseurl:"
   Webdesign München | Internetagentur, Webdesign Agentur | Contao, Wordpress als CMS
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://nolio.de" # the base hostname & protocol for your site
-twitter_username: nolio
-github_username:  
+url: "http://127.0.0.1:4000" # the base hostname & protocol for your site
+
+# team
+t1_name: Niko Noll
+t1_description: Mir macht die Verbindung zwischen Technischem und Kreativem besonders viel Spaß. Momentan studiere ich Wirtschaftsinformatik an der TU München und gehe sonst gern in die Berge oder an die Isar zum Joggen.
+
+t2_name: Lukas Noll
+t2_description: Ich bin der Bastler im Team. Als Ingenieursstudent baue ich gerne Brücken zwischen Form und Funktionalität. Außerdem schraube ich gerne an Fahrrädern rum. 
+
+t3_name: Sonja Wahler
+t3_description: Pinterest viral asymmetrical tote bag authentic selvage. PBR&B bitters organic typewriter +1. Jean shorts 8-bit Schlitz, High Life literally fingerstache mlkshk occupy hashtag pug.
+
+t4_name: Jennifer Ulreich
+t4_description: Ich bin das Organisationstalent.Ich bin Medizinstudentin und kümmere mich nebenbei um die Kundenbetreuung.
+
 
 # Build settings
 markdown: kramdown

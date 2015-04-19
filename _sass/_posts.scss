@@ -1,6 +1,11 @@
 /**
  * Posts
  */
+
+.post {
+    background-image: url(/images/concrete_seamless.png);
+
+}
 .post-header {
     margin-bottom: $spacing-unit;
 }
@@ -16,7 +21,27 @@
 }
 
 .post-content {
-    margin-bottom: $spacing-unit;
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 50px 30px;
+
+    p {
+        font-size: $base-font-size;
+        text-align: justify;
+        
+
+        a{
+            color: #337AB7;
+            font-weight: bold;
+
+            &:hover {
+                color: $brand-color;
+                text-decoration: underline;
+
+            }
+        }
+    }
+    
 
     h2 {
         font-size: 32px;

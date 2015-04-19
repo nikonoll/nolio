@@ -124,31 +124,44 @@
 
                     .footer_social ul{
                         margin: 0;
+
+                        
                     
                         li {
                             list-style-type: none;
                             display: inline-flex;
-                            margin: 30px auto;
+                            margin: 5px;
 
-                            @include media-query ($on-palm) {
-                                margin: 10px auto;
-                            }
-
-                            a{
-                                color: $grey-color-light;
-                                font-size: 10px;
-                                text-transform: uppercase;
-                                padding: 9px;
-                                border: 2px solid #fff;
-                                line-height: 1.0;
+                            #facebook {
+                                #fb_bg {
+                                    fill: $text-color-dark;
+                                }
 
                                 &:hover {
-                                    color: $text-color-dark;
-                                    background-color: #fff;
                                     text-decoration: none;
+                                    #fb_bg {
+                                        fill: #5F2DFF;
+
+                        
+                                    }
+                                }
+                            }
+                            #linkedin {
+                                #in_bg {
+                                    fill: $text-color-dark;
+                                }
+
+                                &:hover {
+                                    text-decoration: none;
+                                    #in_bg {
+                                        fill: #0071BC;
+
+                        
+                                    }
                                 }
                             }
                         }
+                            
                     }
 
                     .footer_license {

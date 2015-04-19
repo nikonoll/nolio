@@ -40,27 +40,31 @@ a {
 }
 
 /* Button stlye*/
-.button_light {
-            display: block;
-            border: 2px solid $text-color-dark;
-            padding: 10px;
-            font-size: 20px;
-            text-transform: uppercase;
-            color: $text-color-dark;
 
-            a {
-                color: $text-color-dark;
-            }
+.button_link {
+    .button_light {
 
-            &:hover {
-                text-decoration: none;
-                background-color: $text-color-dark;
-                
-                a {
-                    color: $text-color;
-                }
-            }
+        display: block;
+        border: 2px solid $text-color-dark;
+        padding: 10px;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: $text-color-dark;
+        
+        &:hover {
+            text-decoration: none;
+            background-color: $text-color-dark;
+            color: $text-color;
+            
+            
         }
+    }
+    a:hover {
+    text-decoration: none;
+    }
+
+}
+
 /* Gradient transparent - color - transparent */
 
 hr.style-two {
@@ -94,12 +98,17 @@ hr.style-two {
 
         //custom styles
         "page",
+        "default_page",
         "welcome",
         "projekte",
         "services",
+        "team",
+        "contact",
         "posts",
         "footer",
         "bootstrap.min",
         "header_banner",
-        "nav"
+        "header_default",
+        "nav",
+        "animate"    
 ;

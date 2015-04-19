@@ -5,6 +5,7 @@
 	background-size: cover;
 	background-position: center;
 	margin-top: -167px;
+	text-align: center;
 
 	@include media-query(800px) {
 		.mobile_layover{
@@ -14,7 +15,41 @@
 		}
 	}
 
+	.arrow_box {
 
+		.down_arrow {
+			position: absolute;
+			top: 500px;
+
+			@include media-query ($on-laptop) {
+				top: 350px;
+			}
+
+
+		#background {
+			fill: rgba(0, 0, 0, 0.3);
+		}
+
+		&:hover #background{
+				fill: white;
+			}
+		#pfeile {
+
+			line{
+				fill: #fff;
+				stroke: #fff;
+			}
+		}
+
+		&:hover #pfeile line {
+						fill: $brand-color;
+						stroke: $brand-color;
+					} 
+
+	}
+	}
+
+	
 
 	.banner_title {
 		color: $text-color;
