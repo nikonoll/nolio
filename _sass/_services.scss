@@ -11,7 +11,7 @@
 		padding-top: 30px;
 
 		.site_headline {
-			font-size: 30px;
+			font-size: $xl-font-size;
 			color: $text-color-dark;
 			text-transform: uppercase;
 			text-align: center;
@@ -51,9 +51,13 @@
 
 					.subheadline {
 						text-align: center;
+						font-size: $l-font-size;
+						color: $text-color-dark;
+						text-transform: uppercase;
 					}
 					.description {
-
+						font-size: $base-font-size;
+						color: $text-color-dark;
 					}
 
 
@@ -70,6 +74,12 @@
 					}
 					button {
 						margin: 50px auto;
+					}
+
+					.team_svg svg{
+
+						
+
 					}
 				}
 			}

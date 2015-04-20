@@ -1,14 +1,12 @@
 ---
 layout: post
-title: KONTAKT
+title: Kontakt
 permalink: /kontakt/
 menu: main
 weight: 4
 ---
 
-#Kontakt
 
-___________
 
 Sie haben Interesse an einer neuen Internetpräsenz, benötigen ein neues Logo oder wollen einfach einmal über Ihre Idee mit uns sprechen? 
 

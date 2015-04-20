@@ -6,18 +6,23 @@
 
 // Our variables
 $base-font-family: Open Sans, Helvetica, sans-serif;
+
+$xl-font-size: 35px;
+$l-font-size: 28px;
+$m-font-size: 20px;
 $base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
+$s-font-size:  $base-font-size * 0.875;
+
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #FFF;
+$text-color:       #E8E8E8;
 $text-color-light: #E8E8E8;
-$text-color-dark:  #828282;
+$text-color-dark:  #424242;
+
 $background-color: #262b2e;
-$brand-color:      #3ddcc5;
-$success-color:	   #41E857;
+$brand-color:      #00B49C;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -36,6 +41,14 @@ a {
     &:hover {
         color: $brand-color;
         text-decoration: none;
+    }
+
+    button {
+        color: $text-color-dark;
+        &:hover {
+        color: $brand-color;
+        text-decoration: none;
+        }
     }
 }
 
@@ -98,7 +111,7 @@ hr.style-two {
 
         //custom styles
         "page",
-        "default_page",
+        "header",
         "welcome",
         "projekte",
         "services",
@@ -108,7 +121,7 @@ hr.style-two {
         "footer",
         "bootstrap.min",
         "header_banner",
-        "header_default",
         "nav",
-        "animate"    
+        "animate",
+        "start_site"  
 ;

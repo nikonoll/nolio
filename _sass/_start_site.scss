@@ -1,0 +1,97 @@
+.start_site_header {
+	position: relative;
+    background-color: $grey-color-dark;
+    background-image: url(/images/headerbildcity.png);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+
+    .site_title_box {
+    padding: 0 5px 0 5px;
+    margin:0;
+    max-width: 100%;
+    float: left;
+
+        .site_title {
+            padding-top: 20px;
+            color: $text-color-light;
+            font-size: $m-font-size;
+            font-weight: 700;
+            letter-spacing: 2px;
+            float: left;
+
+            &:hover {
+                text-decoration: none;
+
+            }
+            @include media-query($on-palm) {
+                color: #fff;
+                text-align: right;
+            }
+        }
+    }
+	.logo_box {
+		width: 100%;
+		clear: both;
+		text-align: center;
+		padding: 170px 0 40px;
+
+		.logo a {
+
+			svg polygon {
+				fill: $brand-color;
+			}
+
+		}
+	}
+    .page_title_box {
+        
+        width: 100%;
+        clear: both;
+        text-align: center;
+        padding: 40px 0;
+
+        .page_title {
+            font-size: $xl-font-size;
+            color: $text-color-light;
+            text-transform: uppercase;
+        }
+    }
+
+    .arrow_box {
+        width: 100%;
+        clear: both;
+        text-align: center;
+        padding-bottom: 20px;
+
+        .arrow {
+            margin: 0 auto;
+            height: auto;
+            cursor: pointer;
+
+            svg {
+                #background {
+                    circle {
+                        fill: rgba($text-color-light, 0.1);
+                    }
+                }
+
+                #pfeile line {
+                    fill: $text-color-light;
+                    stroke: $text-color-light;
+                }
+
+                &:hover {
+                    #background circle {
+                        fill: $text-color-light;
+                    }
+                    #pfeile line {
+                        fill: $brand-color;
+                        stroke: $brand-color;
+                    }
+                }
+            }
+        }
+    }
+}
