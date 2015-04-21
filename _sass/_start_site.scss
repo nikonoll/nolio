@@ -1,7 +1,7 @@
 .start_site_header {
 	position: relative;
     background-color: $grey-color-dark;
-    background-image: url(/images/headerbildcity.png);
+    background-image: url(/images/headerbildcity.jpg);
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
@@ -38,12 +38,20 @@
 		padding: 170px 0 40px;
 
 		.logo a {
-
+            
 			svg polygon {
 				fill: $brand-color;
 			}
 
 		}
+
+        @include media-query (1600px){
+            padding: 100px 0 25px;
+        }
+       @include media-query ($on-laptop){
+            padding: 50px 0 25px;
+        }
+
 	}
     .page_title_box {
         
@@ -57,6 +65,10 @@
             color: $text-color-light;
             text-transform: uppercase;
         }
+
+        @include media-query ($on-palm){
+            padding: 20px 0;
+        }
     }
 
     .arrow_box {
@@ -64,7 +76,7 @@
         clear: both;
         text-align: center;
         padding-bottom: 20px;
-
+        
         .arrow {
             margin: 0 auto;
             height: auto;
@@ -93,5 +105,6 @@
                 }
             }
         }
+
     }
 }

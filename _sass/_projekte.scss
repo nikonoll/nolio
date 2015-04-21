@@ -53,9 +53,10 @@
 			&:hover {
 				text-decoration: none;
 				background-color: $text-color-dark;
+				color: $text-color-light;
 				
 				a {
-					color: $text-color-light;
+					
 				}
 			}
 		}
