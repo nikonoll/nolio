@@ -18,7 +18,7 @@
                 <a href="{{ site.baseurl }}{{ p.url }}#start_content">Leistungen</a>
               {% else %}  
               
-               <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+               <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title | split:'|' | last }}</a>
               {% endif %}
               
             </li>

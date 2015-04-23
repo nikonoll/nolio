@@ -30,8 +30,9 @@
   </div>
   <div class="footer_wrapper">
     <ul>
-          <li> <a href="#">facebook</a> </li>
-          <li> <a href="#">xing</a> </li>
+          <li> <a href="https://www.facebook.com/noliosolutions?fref=ts">facebook</a> </li>
+          <li> <a href="https://www.xing.com/companies/nolio|solutions">xing</a> </li>
+          <li><a href="https://www.google.com/+NolioDeutschland">google+</a></li>
           <li> <a href="/impressum">Impressum</a></li>
           <li> © Nolio 2015, made with Jeykll and &#9829;</li>
         </ul>    
@@ -44,40 +45,85 @@
 
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>  -->
 <script src="{{ "/js/jquery.js" | prepend: site.baseurl | prepend: site.url}}" type="text/javascript" ></script>
-<script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}" type="text/javascript" defer="defer"></script>
-<script src="{{ "/js/wow.min.js" | prepend: site.baseurl | prepend: site.url }}" type="text/javascript" defer="defer"></script>
+<!-- <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}" type="text/javascript" defer="defer"></script>
+ --><script src="{{ "/js/wow.min.js" | prepend: site.baseurl | prepend: site.url }}" type="text/javascript" defer="defer"></script>
 
 <script src="{{ "/js/smooth-scroll.min.js" | prepend: site.baseurl | prepend: site.url}}" type="text/javascript" defer="defer"></script>
 
 <script>
 $(function () {
-smoothScroll.init();
-new WOW().init();
-var mql = window.matchMedia('(max-width: 600px)');
+  smoothScroll.init();
+  new WOW().init();
+
+  
+
+  var theToggle = document.getElementById('clicker');
+
+  // based on Todd Motto functions
+  // http://toddmotto.com/labs/reusable-js/
+
+  // hasClass
+  function hasClass(elem, className) {
+    return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+  }
+  // addClass
+  function addClass(elem, className) {
+      if (!hasClass(elem, className)) {
+        elem.className += ' ' + className;
+      }
+  }
+  // removeClass
+  function removeClass(elem, className) {
+    var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
+    if (hasClass(elem, className)) {
+          while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
+              newClass = newClass.replace(' ' + className + ' ', ' ');
+          }
+          elem.className = newClass.replace(/^\s+|\s+$/g, '');
+      }
+  }
+  // toggleClass
+  function toggleClass(elem, className) {
+    var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
+      if (hasClass(elem, className)) {
+          while (newClass.indexOf(" " + className + " ") >= 0 ) {
+              newClass = newClass.replace( " " + className + " " , " " );
+          }
+          elem.className = newClass.replace(/^\s+|\s+$/g, '');
+      } else {
+          elem.className += ' ' + className;
+      }
+  }
+
+  theToggle.onclick = function() {
+     toggleClass(this, 'on');
+     return false;
+  }
+  
+});
+
+
+/*var mql = window.matchMedia('(max-width: 600px)');
 if (mql.matches) {
     $('.click-nav .js ul').hide();
     $('.clicker').click(function (clickedthat) {
       $('.click-nav .js ul').slideToggle(400);
       $('.clicker').toggleClass('active');
-      $('.menu_list').removeClass('inactive');
+      $('#menu_list').removeClass('inactive');
 
       clickedthat.stopPropagation();
       $(document).click(function() {
           if ($('.click-nav .js ul').is(':visible')) {
             $('.click-nav .js ul', this).slideUp();
             $('.clicker').removeClass('active');
-            $('.menu_list').toggleClass('inactive');
+            $('#menu_list').toggleClass('inactive');
           }
         });
     });  
     } 
     else {
       $('.click-nav .js ul').show();
-}
-
-});
-
-
+}*/
 
 </script>
 

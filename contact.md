@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kontakt
+title: NOLIO | Kontakt
 permalink: /kontakt/
 menu: main
 weight: 4
